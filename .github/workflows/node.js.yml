@@ -24,4 +24,4 @@ jobs:
     steps:  
     - run: |
        npm i irc
-       node index.js
+       node ../index.js
