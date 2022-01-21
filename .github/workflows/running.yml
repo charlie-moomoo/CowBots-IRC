@@ -18,10 +18,9 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [10.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:  
-    - run: |
-       npm i irc
-       node /index.js
+    - run: npm i irc
+    - run: node index.js
